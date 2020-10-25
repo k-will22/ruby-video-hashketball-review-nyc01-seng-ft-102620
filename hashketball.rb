@@ -130,9 +130,10 @@ end
 
 # Write code here
 def players
-  game_hash[:home][:players].concat(game_hash[:away][:players])
+  both_teams = game_hash[:home][:players].merge(game_hash[:away][:players])
+  both_teams
 end 
-binding.pry
+
 
 def team team_name
   case team_name 
