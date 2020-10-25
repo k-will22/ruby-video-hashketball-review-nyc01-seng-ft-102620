@@ -179,5 +179,9 @@ def player_numbers team_name
 end 
 
 def player_stats player_name 
-  
+  players.each do |i|
+     if i[:player_name] == player_name
+       return i
+  end 
+ end 
 end 
