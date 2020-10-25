@@ -189,12 +189,11 @@ end
 def big_shoe_rebounds 
   index = 0
   largest_shoe = {}
-  players.each do |key, value|
-    if key[:shoe] > index 
-
-      largest_shoe = key
-binding.pry 
+  players.each do |i|
+    if i[:shoe] > index 
+        puts largest_shoe = i
     end 
  end
  largest_shoe[:rebounds]
+ binding.pry
 end 
