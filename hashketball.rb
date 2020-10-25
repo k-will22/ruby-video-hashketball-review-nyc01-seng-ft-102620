@@ -174,6 +174,7 @@ end
   
 def player_numbers team_name
   team(team_name)[:players].map{|key, value| value[:number]}
+binding.pry
 end 
 
 def player_stats player_name 
