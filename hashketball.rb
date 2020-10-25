@@ -149,6 +149,7 @@ def num_points_scored player_name
        return i[:points]
  end 
 end 
+end 
  
 def shoe_size player_name 
   players[player_name][:points]
