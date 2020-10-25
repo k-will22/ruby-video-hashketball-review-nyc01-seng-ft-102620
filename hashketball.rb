@@ -193,6 +193,7 @@ def big_shoe_rebounds
     if i[:shoe] > index 
 
      largest_shoe = i 
+binding.pry
     end 
       largest_shoe[:rebounds]
  end
