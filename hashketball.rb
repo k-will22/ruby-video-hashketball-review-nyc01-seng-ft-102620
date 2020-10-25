@@ -132,6 +132,7 @@ end
 def players
   game_hash[:home][:players].concat(game_hash[:away][:players])
 end 
+binding.pry
 
 def team team_name
   case team_name 
@@ -144,7 +145,7 @@ def team team_name
   
 def num_points_scored player_name
     players[player_name][:points] 
-    binding.pry
+
  end 
  
 def shoe_size player_name 
