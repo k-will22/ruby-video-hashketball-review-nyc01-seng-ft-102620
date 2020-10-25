@@ -143,6 +143,7 @@ def team team_name
   end 
   
 def num_points_scored player_name
+binding.pry
     players[player_name][:points]
 
   end 
