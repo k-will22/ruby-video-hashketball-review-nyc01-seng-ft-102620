@@ -174,7 +174,6 @@ end
   
 def player_numbers team_name
   team(team_name)[:players].map do |player_name| 
-binding.pry
     player_name[:number]
 end 
 end 
