@@ -152,7 +152,11 @@ end
 end 
  
 def shoe_size player_name 
-  players[player_name][:points]
+  players.each do |i|
+    if i[:player_name] == player_name
+      return i[:shoe]
+    end 
+  end 
 end 
 
 def team_colors team_name
