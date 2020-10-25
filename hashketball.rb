@@ -175,9 +175,10 @@ end
 def player_numbers team_name
   team(team_name)[:players].map do |player_name| 
     player_name[:number]
-end 
+ end 
 end 
 
 def player_stats player_name 
   players[player_name]
+binding.pry
 end 
