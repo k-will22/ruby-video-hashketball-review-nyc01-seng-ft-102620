@@ -130,7 +130,7 @@ end
 
 # Write code here
 def players
-  both_teams = game_hash[:home][:players].merge(game_hash[:away][:players])
+  both_teams = game_hash[:home][:players].concat(game_hash[:away][:players])
   both_teams
 end 
 
@@ -145,14 +145,11 @@ def team team_name
   end 
   
 def num_points_scored player_name
-  both_teams = players 
     players[player_name][:points] 
-
- end 
+end 
  
 def shoe_size player_name 
   players[player_name][:points]
-
 end 
 
 def team_colors team_name
