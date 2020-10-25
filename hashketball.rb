@@ -145,7 +145,7 @@ def team team_name
   end 
   
 def num_points_scored player_name
-  players = both_teams
+  both_teams = players 
     players[player_name][:points] 
 
  end 
