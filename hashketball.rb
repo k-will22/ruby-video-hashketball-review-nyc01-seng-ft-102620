@@ -185,3 +185,13 @@ def player_stats player_name
   end 
  end 
 end 
+
+def big_shoe_rebounds 
+  index = 0
+  largest_shoe = ""
+  players.each do |i|
+    if i[:shoe] > index 
+      largest_shoe = i 
+    end 
+      largest_shoe[:rebounds]
+end
