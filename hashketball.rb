@@ -145,8 +145,8 @@ def team team_name
   
 def num_points_scored player_name
     players.each do |i|
-binding.pry
-      i[player_name][:points] 
+     if i[player_name] == player_name
+       return i[:points]
  end 
 end 
  
