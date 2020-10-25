@@ -144,7 +144,7 @@ def team team_name
   
 def num_points_scored player_name
     players[player_name][:points]
-binding.pry
+  binding.pry
  end 
 
 def shoe_size player_name 
