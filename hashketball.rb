@@ -145,8 +145,9 @@ def team team_name
   
 def num_points_scored player_name
     players.each do |i|
+binding.pry
       i[player_name][:points] 
-end 
+ end 
 end 
  
 def shoe_size player_name 
